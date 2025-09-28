@@ -7,13 +7,13 @@ Bash-скрипт для тестирования времени отклика 
 ### Для Ubuntu/Linux серверов:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/ping_white/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Heyoamsif232242/ping_white-list/main/install.sh | bash
 ```
 
 ### Альтернативный способ с wget:
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/YOUR_USERNAME/ping_white/main/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/Heyoamsif232242/ping_white-list/main/install.sh | bash
 ```
 
 ## 📋 Что делает скрипт
@@ -39,8 +39,8 @@ wget -qO- https://raw.githubusercontent.com/YOUR_USERNAME/ping_white/main/instal
 
 1. **Клонировать репозиторий:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ping_white.git
-   cd ping_white
+   git clone https://github.com/Heyoamsif232242/ping_white-list.git
+   cd ping_white-list
    ```
 
 2. **Сделать скрипт исполняемым:**
@@ -100,12 +100,12 @@ wget -qO- https://raw.githubusercontent.com/YOUR_USERNAME/ping_white/main/instal
 
 ```bash
 # Запуск на удаленном сервере через SSH
-ssh user@server "curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/ping_white/main/install.sh | bash"
+ssh user@server "curl -fsSL https://raw.githubusercontent.com/Heyoamsif232242/ping_white-list/main/install.sh | bash"
 
 # Запуск на нескольких серверах
 for server in server1 server2 server3; do
     echo "=== Testing $server ==="
-    ssh user@$server "curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/ping_white/main/install.sh | bash"
+    ssh user@$server "curl -fsSL https://raw.githubusercontent.com/Heyoamsif232242/ping_white-list/main/install.sh | bash"
 done
 ```
 
@@ -113,7 +113,7 @@ done
 
 ```bash
 # Добавить в crontab (каждый час)
-0 * * * * curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/ping_white/main/install.sh | bash > /var/log/ping_test.log 2>&1
+0 * * * * curl -fsSL https://raw.githubusercontent.com/Heyoamsif232242/ping_white-list/main/install.sh | bash > /var/log/ping_test.log 2>&1
 ```
 
 ## 📝 Логи

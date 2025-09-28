@@ -13,8 +13,8 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# URL репозитория (замените YOUR_USERNAME на ваше имя пользователя GitHub)
-REPO_URL="https://raw.githubusercontent.com/YOUR_USERNAME/ping_white/main"
+# URL репозитория
+REPO_URL="https://raw.githubusercontent.com/Heyoamsif232242/ping_white-list/main"
 SCRIPT_NAME="ping_domains.sh"
 TEMP_DIR="/tmp/ping_white_$$"
 
@@ -136,7 +136,7 @@ error_handler() {
     local line_no=$1
     echo -e "${RED}❌ Ошибка на строке $line_no${NC}"
     echo -e "${YELLOW}Если проблема повторяется, обратитесь к документации:${NC}"
-    echo "https://github.com/YOUR_USERNAME/ping_white"
+    echo "https://github.com/Heyoamsif232242/ping_white-list"
     exit 1
 }
 
